@@ -123,9 +123,9 @@ export function RegistrationForm() {
       initial={{ opacity: 0, y: 60 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 1, ease: "easeOut" }}
-      className="w-full max-w-3xl mx-auto"
+      className="w-full max-w-3xl mx-auto px-4"
     >
-      <Card className="backdrop-blur-2xl bg-white/[0.08] border border-white/20 shadow-2xl rounded-3xl p-10 relative overflow-hidden">
+      <Card className="backdrop-blur-2xl bg-white/[0.08] border border-white/20 shadow-2xl rounded-3xl p-6 sm:p-8 md:p-10 relative overflow-hidden">
         {/* Dynamic background gradient */}
         <motion.div
           className="absolute inset-0 rounded-3xl opacity-50"
@@ -182,10 +182,10 @@ export function RegistrationForm() {
             initial={{ opacity: 0, y: -30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-center mb-12"
+            className="text-center mb-8 sm:mb-12"
           >
             <motion.h2
-              className="text-4xl mb-6"
+              className="text-2xl sm:text-3xl md:text-4xl mb-4 sm:mb-6"
               animate={{
                 backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
               }}
@@ -202,7 +202,7 @@ export function RegistrationForm() {
               </span>
             </motion.h2>
             <motion.p
-              className="text-white/90 text-xl leading-relaxed max-w-2xl mx-auto"
+              className="text-white/90 text-base sm:text-lg md:text-xl leading-relaxed max-w-2xl mx-auto px-4"
               animate={{
                 opacity: [0.8, 1, 0.8],
               }}
