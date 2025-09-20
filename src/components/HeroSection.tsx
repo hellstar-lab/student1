@@ -71,7 +71,7 @@ export function HeroSection() {
           <img 
             src={logoImage} 
             alt="Pixel Plus Tech Community" 
-            className="w-56 h-56 mx-auto drop-shadow-2xl relative z-10"
+            className="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 mx-auto drop-shadow-2xl relative z-10"
           />
         </motion.div>
         
@@ -79,7 +79,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 1 }}
-          className="text-7xl md:text-8xl mb-8"
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-8"
         >
           <motion.span
             className="bg-gradient-to-r from-violet-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent"
@@ -106,7 +106,7 @@ export function HeroSection() {
           className="relative"
         >
           <motion.p
-            className="text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed mb-6"
+            className="text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto leading-relaxed mb-6 px-4"
             animate={{
               color: ['rgba(255,255,255,0.9)', 'rgba(255,255,255,0.7)', 'rgba(255,255,255,0.9)'],
             }}
@@ -166,7 +166,7 @@ export function HeroSection() {
         initial={{ opacity: 0, y: 60 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 1 }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20 w-full max-w-7xl"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-16 sm:mb-20 w-full max-w-7xl px-4"
       >
         {features.map((feature, index) => (
           <motion.div
@@ -182,7 +182,7 @@ export function HeroSection() {
             }}
             className="group perspective-1000"
           >
-            <div className="relative backdrop-blur-2xl bg-white/[0.08] border border-white/20 rounded-3xl p-8 text-center transition-all duration-500 h-full overflow-hidden hover:bg-white/[0.12] hover:border-white/30">
+            <div className="relative backdrop-blur-2xl bg-white/[0.08] border border-white/20 rounded-3xl p-6 sm:p-8 text-center transition-all duration-500 h-full overflow-hidden hover:bg-white/[0.12] hover:border-white/30">
               {/* Animated background gradient */}
               <motion.div
                 className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-10 transition-opacity duration-500 rounded-3xl`}
@@ -243,14 +243,14 @@ export function HeroSection() {
               </motion.div>
               
               <motion.h3 
-                className="text-white mb-3 text-xl"
+                className="text-white mb-3 text-lg sm:text-xl"
                 whileHover={{ scale: 1.05 }}
               >
                 {feature.title}
               </motion.h3>
               
               <motion.p 
-                className="text-white/80 text-sm leading-relaxed"
+                className="text-white/80 text-xs sm:text-sm leading-relaxed"
                 whileHover={{ color: 'rgba(255,255,255,0.95)' }}
               >
                 {feature.description}
@@ -265,7 +265,7 @@ export function HeroSection() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="text-center relative"
+        className="text-center relative px-4"
       >
         {/* Pulsing background */}
         <motion.div
@@ -297,7 +297,7 @@ export function HeroSection() {
           className="relative z-10"
         >
           <motion.div
-            className="text-white/90 mb-6 flex items-center justify-center gap-3 text-lg"
+            className="text-white/90 mb-6 flex items-center justify-center gap-2 sm:gap-3 text-base sm:text-lg"
             animate={{
               opacity: [0.8, 1, 0.8],
             }}
@@ -331,7 +331,7 @@ export function HeroSection() {
               repeat: Infinity,
               ease: "easeInOut",
             }}
-            className="bg-gradient-to-r from-violet-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent text-xl"
+            className="bg-gradient-to-r from-violet-400 via-pink-400 to-cyan-400 bg-clip-text text-transparent text-lg sm:text-xl"
             style={{
               backgroundSize: '200% 200%',
             }}
